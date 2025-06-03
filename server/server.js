@@ -25,7 +25,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: "http://mc-82tkppsf9-bharath-sivaneshs-projects.vercel.app",
+    origin: "https://mc-mauve.vercel.app",
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
       "Content-Type",

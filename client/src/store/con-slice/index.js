@@ -14,7 +14,7 @@ export const submitContributor = createAsyncThunk(
   async (formData, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/contributorEnroll/submit",
+        "https://mc-s4se.onrender.com/api/contributorEnroll/submit",
         formData,
         { withCredentials: true }
       );

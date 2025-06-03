@@ -13,12 +13,17 @@ export const fetchActiveEvent = createAsyncThunk(
   "events/fetchActiveEvent",
   async (_, { rejectWithValue }) => {
     try {
-      const response = await axios.get("http://localhost:5000/api/events/active-event", {
-        withCredentials: true,
-      });
+      const response = await axios.get(
+        "https://mc-s4se.onrender.com/api/events/active-event",
+        {
+          withCredentials: true,
+        }
+      );
       return response.data.event; // We only return the event object
     } catch (error) {
-      return rejectWithValue(error.response?.data?.message || "Something went wrong");
+      return rejectWithValue(
+        error.response?.data?.message || "Something went wrong"
+      );
     }
   }
 );

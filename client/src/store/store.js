@@ -6,16 +6,15 @@ import eventReducer from "./event-slice";
 import projectReducer from "./project-slice";
 import postReducer from "./post-slice";
 
-
 const store = configureStore({
-    reducer : {
-        auth : authReducer,
-        developerEnroll : developerReducer,
-        contributorEnroll : contributorReducer,
-        event : eventReducer,
-        project : projectReducer,
-        linkedin : postReducer
-    }
-})
+  reducer: {
+    auth: authReducer,
+    developerEnroll: developerReducer,
+    contributorEnroll: contributorReducer,
+    event: eventReducer,
+    project: projectReducer,
+    linkedin: postReducer,
+  },
+});
 
 export default store;
